@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 import html2canvas from 'html2canvas';
 import { Calculator } from './components/Calculator';
 import { CharacterSelector } from './components/CharacterSelector';
@@ -255,6 +256,7 @@ function App() {
           </div>
         </div>
       </a>
+      <Analytics />
     </div>
   );
 }
