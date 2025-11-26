@@ -112,7 +112,7 @@ function App() {
       maximumFractionDigits: 0,
     });
 
-    const text = `Checking my Extended airdrop! 🪂\n\nXP: ${xp}\nEst. value: ${formattedValue}\n\nCheck yours at xextended.xyz @extended`;
+    const text = `Checking my Extended airdrop! 🪂\n\nXP: ${xp}\nEst. value: ${formattedValue}\n\nCheck yours at xextended.xyz @extended\nExtendio`;
     const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text);
     window.open(url, '_blank');
   };
