@@ -5,19 +5,19 @@ import { Calculator } from './components/Calculator';
 import { CharacterSelector } from './components/CharacterSelector';
 import { PNLCard } from './components/PNLCard';
 import { MediaKit } from './components/MediaKit';
-import { FDVGrid } from './components/FDVGrid';
+import { FDVGrid, TOTAL_XP_SUPPLY } from './components/FDVGrid';
 import { Download, Share2, Copy } from 'lucide-react';
 
 function App() {
   const [xp, setXp] = useState<string>('');
   const [selectedChar, setSelectedChar] = useState<string>('otter_fire');
+  const [selectedFdv, setSelectedFdv] = useState<number>(1_000_000_000);
   const cardRef = useRef<HTMLDivElement>(null);
 
   const xpNum = parseFloat(xp.replace(/,/g, '')) || 0;
 
-  // Default calculation for the PNL Card (using 1B FDV as a baseline example or the highest one)
-  // The reference image shows a specific value in the card. Let's use 1B FDV for the card preview.
-  const cardEstimatedValue = (xpNum / 50_000_000) * (1_000_000_000 * 0.30);
+  // Calculate estimated value based on selected FDV
+  const cardEstimatedValue = (xpNum / TOTAL_XP_SUPPLY) * (selectedFdv * 0.30);
 
   const captureCard = async () => {
     if (!cardRef.current) return null;
@@ -161,7 +161,11 @@ function App() {
         {xpNum > 0 && (
           <>
             {/* 3. FDV Grid */}
-            <FDVGrid xp={xpNum} />
+            <FDVGrid
+              xp={xpNum}
+              selectedFdv={selectedFdv}
+              onSelectFdv={setSelectedFdv}
+            />
 
             {/* 4. PNL Card Section */}
             <div className="flex flex-col items-center gap-8 mt-12 w-full">

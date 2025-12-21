@@ -8,7 +8,6 @@ interface CalculatorProps {
 export const Calculator: React.FC<CalculatorProps> = ({ xp, onXpChange }) => {
     return (
         <div className="flex flex-col items-center gap-4 w-full max-w-xl mx-auto">
-            <label className="text-gray-500 text-sm font-bold uppercase tracking-[0.2em]">ENTER YOUR SEASON 2 XP</label>
             <div className="relative w-full group">
                 <input
                     type="text"
@@ -24,7 +23,7 @@ export const Calculator: React.FC<CalculatorProps> = ({ xp, onXpChange }) => {
                 />
                 <div className="absolute right-8 top-1/2 -translate-y-1/2 text-gray-600 font-bold pointer-events-none text-xl">XP</div>
             </div>
-            <p className="text-gray-600 text-sm">Based on estimated 50M Total XP & 30% Supply Allocation</p>
+            <p className="text-gray-600 text-sm">Based on estimated 70M Total XP & 30% Supply Allocation</p>
         </div>
     );
 };
