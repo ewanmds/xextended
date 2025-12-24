@@ -34,7 +34,7 @@ export function ReferralBanner() {
                 </button>
 
                 <a
-                    href="https://app.extended.exchange/join/RAPIDO"
+                    href="https://app.extended.exchange/join/EXTENDED_OTC"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block relative bg-gradient-to-br from-extended-green/20 to-extended-green/5 backdrop-blur-md border border-extended-green/30 rounded-2xl p-4 shadow-[0_0_40px_rgba(0,255,0,0.15)] hover:shadow-[0_0_60px_rgba(0,255,0,0.25)] transition-all duration-300 hover:scale-105"

@@ -329,7 +329,7 @@ export function Markets() {
                                         <td className="p-6 text-center">
                                             <div className="flex items-center justify-center gap-2">
                                                 <a
-                                                    href="https://app.extended.exchange/join/RAPIDO"
+                                                    href="https://app.extended.exchange/join/EXTENDED_OTC"
                                                     target="_blank"
                                                     rel="noreferrer"
                                                     className="inline-flex px-4 py-2 bg-extended-green hover:bg-[#00cc00] text-black border border-extended-green hover:border-[#00cc00] rounded-lg transition-all font-bold text-xs"

@@ -113,7 +113,7 @@ export function MarketDetails({ marketId, onBack }: MarketDetailsProps) {
                     <div className="flex items-center gap-8">
                         <div className="text-right">
                             <a
-                                href="https://app.extended.exchange/join/RAPIDO"
+                                href="https://app.extended.exchange/join/EXTENDED_OTC"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="inline-flex px-6 py-3 bg-extended-green hover:bg-[#00cc00] text-black font-black rounded-xl transition-all text-sm items-center gap-2 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(0,255,0,0.3)] hover:shadow-[0_0_30px_rgba(0,255,0,0.5)]"
