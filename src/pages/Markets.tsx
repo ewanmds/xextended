@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { Market, APIResponse } from '../types/api';
-import { Search, ArrowUpRight, ArrowDownRight, TrendingUp, Activity, BarChart3, Flame, TrendingDown } from 'lucide-react';
+import { Search, ArrowUpRight, ArrowDownRight, TrendingUp, Activity, BarChart3, TrendingDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const AnimatedValue = ({ value, className }: { value: React.ReactNode, className?: string }) => (
