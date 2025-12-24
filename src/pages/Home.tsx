@@ -135,11 +135,7 @@ export function Home() {
 
     return (
         <div className="flex flex-col items-center relative pb-24 w-full">
-            {/* Background Glows are handled in Layout or Main wrapper, but we can keep some here if we want specific positioning */}
-            <div className="fixed inset-0 z-0 pointer-events-none">
-                <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[1500px] h-[1500px] bg-extended-green/10 rounded-full blur-[180px]" />
-                <div className="absolute bottom-[-20%] right-[-10%] w-[1000px] h-[1000px] bg-extended-green/5 rounded-full blur-[200px]" />
-            </div>
+
 
 
 
@@ -150,7 +146,7 @@ export function Home() {
                     <div className="p-4 bg-white/5 rounded-2xl border border-white/10 shadow-2xl backdrop-blur-sm">
                         <img src="/assets/logo_final.jpg" alt="Extended" className="w-16 h-16 object-contain rounded-lg" />
                     </div>
-                    <h1 className="text-5xl md:text-6xl font-black text-white drop-shadow-2xl">
+                    <h1 className="text-5xl md:text-6xl font-black text-white tracking-tighter drop-shadow-2xl">
                         Airdrop Estimator
                     </h1>
                 </header>
@@ -223,44 +219,7 @@ export function Home() {
             </div>
 
             {/* Referral Banner - Fixed Bottom Right */}
-            <a
-                href="https://app.extended.exchange/join/RAPIDO"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="fixed bottom-6 right-6 z-50 group animate-slide-in-right"
-                style={{
-                    animation: 'slideInRight 0.8s ease-out forwards'
-                }}
-            >
-                <style>{`
-          @keyframes slideInRight {
-            from {
-              transform: translateX(400px);
-              opacity: 0;
-            }
-            to {
-              transform: translateX(0);
-              opacity: 1;
-            }
-          }
-        `}</style>
-                <div className="relative bg-gradient-to-br from-extended-green/20 to-extended-green/5 backdrop-blur-md border border-extended-green/30 rounded-2xl p-4 shadow-[0_0_40px_rgba(0,255,0,0.15)] hover:shadow-[0_0_60px_rgba(0,255,0,0.25)] transition-all duration-300 hover:scale-105">
-                    {/* Glow effect */}
-                    <div className="absolute inset-0 bg-extended-green/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                    <div className="relative flex items-center gap-3">
-                        <div className="w-10 h-10 bg-extended-green/20 rounded-full flex items-center justify-center border border-extended-green/40">
-                            <svg className="w-5 h-5 text-extended-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                            </svg>
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="text-white font-bold text-sm leading-tight">Trade on Extended</span>
-                            <span className="text-extended-green text-xs font-semibold">Get 10% Fee Discount</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
         </div>
     );
 }

@@ -30,21 +30,16 @@ export function ExtendedOTC() {
     const percentChange = 0; // ((currentPrice - startPrice) / startPrice) * 100;
 
     return (
-        <div className="min-h-screen bg-[#050505] font-sans text-white relative overflow-x-hidden">
-            {/* Background Glows */}
-            <div className="fixed inset-0 z-0 pointer-events-none">
-                <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[1500px] h-[1500px] bg-extended-green/10 rounded-full blur-[180px]" />
-                <div className="absolute bottom-[-20%] right-[-10%] w-[1000px] h-[1000px] bg-extended-green/5 rounded-full blur-[200px]" />
-            </div>
+        <div className="min-h-screen bg-transparent font-sans text-white relative overflow-x-hidden">
 
-            <div className="relative z-10 container mx-auto px-4 max-w-7xl pt-24 pb-24 space-y-8 animate-fade-in-up">
+            <div className="relative z-10 container mx-auto px-4 max-w-7xl pt-24 pb-24 space-y-8">
 
                 {/* Header Section with Title */}
                 <div className="flex flex-col items-center justify-center gap-2 pb-8 text-center relative group">
-                    <h1 className="text-5xl md:text-7xl font-black text-white tracking-tighter drop-shadow-[0_0_20px_rgba(0,255,0,0.15)] transition-all duration-500 group-hover:drop-shadow-[0_0_35px_rgba(0,255,0,0.3)]">
+                    <h1 className="text-5xl md:text-6xl font-black text-white tracking-tighter drop-shadow-2xl">
                         Extended OTC
                     </h1>
-                    <div className="h-1 w-24 bg-gradient-to-r from-transparent via-extended-green to-transparent rounded-full opacity-50 group-hover:w-32 group-hover:opacity-100 transition-all duration-500" />
+                    <div className="h-1 w-24 bg-gradient-to-r from-transparent via-extended-green to-transparent rounded-full opacity-50" />
                     <p className="text-gray-400 text-lg max-w-2xl mt-2">
                         The community market for Extended XP
                     </p>
