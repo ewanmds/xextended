@@ -418,7 +418,7 @@ export function ExtendedOTC() {
 
                         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
                             <a
-                                href="https://twitter.com/extendedapp"
+                                href="https://x.com/ExtendedOTC1"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="px-6 py-2 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-colors flex items-center gap-2"
